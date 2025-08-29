@@ -16,8 +16,8 @@ chapters:
   sections:
   - file: notebooks/02/2_1_a_linear_program_for_the_diet_problem.ipynb
   - file: notebooks/02/2_2_an_AMPL_model_for_the_diet_problem.ipynb
-  - file: notebooks/02/using_the_AMPL_diet_model.ipynb
-  - file: notebooks/02/generalizations_to_blending_economics_and_scheduling.ipynb
+  - file: notebooks/02/2_3_using_the_AMPL_diet_model.ipynb
+  - file: notebooks/02/2_4_generalizations_to_blending_economics_and_scheduling.ipynb
   
 - file: notebooks/03/03.md
   sections:
