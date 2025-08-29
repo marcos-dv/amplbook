@@ -28,9 +28,10 @@ chapters:
 
 - file: notebooks/04/04.md
   sections:
-  - file: notebooks/04/a_multicommodity_transportation_model.ipynb
-  - file: notebooks/04/a_multiperiod_production_model.ipynb
-  - file: notebooks/04/a_model_of_production_and_transportation.ipynb
+  - file: notebooks/04/4_1_a_multicommodity_transportation_model.ipynb
+  - file: notebooks/04/4_2_a_multiperiod_production_model.ipynb
+  - file: notebooks/04/4_3_a_model_of_production_and_transportation.ipynb
+  - file: notebooks/04/4_exercises.ipynb
 
 - file: notebooks/appendix/appendix.md
   sections:
