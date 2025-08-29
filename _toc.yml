@@ -11,6 +11,7 @@ chapters:
   - file: notebooks/01/tut_1_4.ipynb
   - file: notebooks/01/tut_1_5.ipynb
   - file: notebooks/01/tut_1_6.ipynb
+  - file: notebooks/01/1_exercises.ipynb
 
 - file: notebooks/02/02.md
   sections:
@@ -18,6 +19,7 @@ chapters:
   - file: notebooks/02/2_2_an_AMPL_model_for_the_diet_problem.ipynb
   - file: notebooks/02/2_3_using_the_AMPL_diet_model.ipynb
   - file: notebooks/02/2_4_generalizations_to_blending_economics_and_scheduling.ipynb
+  - file: notebooks/02/2_exercises.ipynb
   
 - file: notebooks/03/03.md
   sections:
