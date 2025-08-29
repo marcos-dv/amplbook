@@ -24,6 +24,7 @@ chapters:
   - file: notebooks/03/3_1_a_linear_program_for_the_transportation_problem.ipynb
   - file: notebooks/03/3_2_an_AMPL_model_for_the_transportation_problem.ipynb
   - file: notebooks/03/3_3_other_interpretations_of_the_transportation_model.ipynb
+  - file: notebooks/03/3_exercises.ipynb
 
 - file: notebooks/04/04.md
   sections:
