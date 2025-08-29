@@ -1,0 +1,67 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+# Instructions:
+#  - Build: $ jupyter-book build .
+#  - Build config: $ jupyter-book config sphinx .
+#  - Build with sphinx: $ python -m sphinx -b html . _build/html
+#  - Open index.html: open _build/html/index.html
+
+title: "AMPL: A Modeling Language for Mathematical Programming"
+
+author: The AMPL Team
+copyright: "2025"
+logo: media/logo-03.png
+exclude_patterns: [.DS_Store, "**.ipynb_checkpoints", "**.pytest_cache", "tools"]
+
+# Launch on Google Colab button
+launch_buttons:
+  notebook_interface: "classic"
+  colab_url: "https://colab.research.google.com"
+
+# only build files that appear in toc
+only_build_toc_files: true
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: off
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_engine: pdflatex
+  use_jupyterbook_latex: true
+  latex_documents:
+    targetname: amplbook.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/ampl/amplbook.ampl.com  # Online location of your book
+  branch: dev  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  favicon: https://raw.githubusercontent.com/ampl/ampl.github.io/master/themes/static/ampl-favicon.png
+  use_issues_button: true
+  use_repository_button: true
+  use_multitoc_numbering: false
+  home_page_in_navbar: true
+  baseurl: https://ampl.com/amplbook/
+
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.googleanalytics
+  #  - sphinxcontrib.mermaid
+  recursive_update: true
+  config:
+    templates_path: ["_templates"]
+    suppress_warnings: ["mystnb.unknown_mime_type"]
+    googleanalytics_id: G-TB617QHPDG
+    html_theme_options:
+      "article_header_end": ["article-header-buttons-ampl.html"]
+    
