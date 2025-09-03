@@ -3,41 +3,42 @@
 format: jb-book
 root: index.md
 chapters:
-  - file: notebooks/01/tut_1_1.ipynb
-  sections:
-    - file: notebooks/01/tut_1_1.ipynb
-    - file: notebooks/01/tut_1_2.ipynb
-    - file: notebooks/01/tut_1_3.ipynb
-    - file: notebooks/01/tut_1_4.ipynb
-    - file: notebooks/01/tut_1_5.ipynb
-    - file: notebooks/01/tut_1_6.ipynb
-    - file: notebooks/01/1_exercises.ipynb
- 
+  - file: notebooks/01/01.md
+    sections:
+      - file: notebooks/01/tut_1_1.ipynb
+      - file: notebooks/01/tut_1_2.ipynb
+      - file: notebooks/01/tut_1_3.ipynb
+      - file: notebooks/01/tut_1_4.ipynb
+      - file: notebooks/01/tut_1_5.ipynb
+      - file: notebooks/01/tut_1_6.ipynb
+      - file: notebooks/01/1_exercises.ipynb
+
   - file: notebooks/02/02.md
-  sections:
-    - file: notebooks/02/2_1_a_linear_program_for_the_diet_problem.ipynb
-    - file: notebooks/02/2_2_an_AMPL_model_for_the_diet_problem.ipynb
-    - file: notebooks/02/2_3_using_the_AMPL_diet_model.ipynb
-    - file: notebooks/02/2_4_generalizations_to_blending_economics_and_scheduling.ipynb
-    - file: notebooks/02/2_exercises.ipynb
-   
+    sections:
+      - file: notebooks/02/2_1_a_linear_program_for_the_diet_problem.ipynb
+      - file: notebooks/02/2_2_an_AMPL_model_for_the_diet_problem.ipynb
+      - file: notebooks/02/2_3_using_the_AMPL_diet_model.ipynb
+      - file: notebooks/02/2_4_generalizations_to_blending_economics_and_scheduling.ipynb
+      - file: notebooks/02/2_exercises.ipynb
+
   - file: notebooks/03/03.md
-  sections:
-    - file: notebooks/03/3_1_a_linear_program_for_the_transportation_problem.ipynb
-    - file: notebooks/03/3_2_an_AMPL_model_for_the_transportation_problem.ipynb
-    - file: notebooks/03/3_3_other_interpretations_of_the_transportation_model.ipynb
-    - file: notebooks/03/3_exercises.ipynb
- 
+    sections:
+      - file: notebooks/03/3_1_a_linear_program_for_the_transportation_problem.ipynb
+      - file: notebooks/03/3_2_an_AMPL_model_for_the_transportation_problem.ipynb
+      - file: notebooks/03/3_3_other_interpretations_of_the_transportation_model.ipynb
+      - file: notebooks/03/3_exercises.ipynb
+
   - file: notebooks/04/04.md
-  sections:
-    - file: notebooks/04/4_1_a_multicommodity_transportation_model.ipynb
-    - file: notebooks/04/4_2_a_multiperiod_production_model.ipynb
-    - file: notebooks/04/4_3_a_model_of_production_and_transportation.ipynb
-    - file: notebooks/04/4_exercises.ipynb
- 
+    sections:
+      - file: notebooks/04/4_1_a_multicommodity_transportation_model.ipynb
+      - file: notebooks/04/4_2_a_multiperiod_production_model.ipynb
+      - file: notebooks/04/4_3_a_model_of_production_and_transportation.ipynb
+      - file: notebooks/04/4_exercises.ipynb
+
   - file: notebooks/appendix/appendix.md
-  sections:
-    - file: notebooks/appendix/ampl-style-guide.ipynb
-    - file: notebooks/appendix/amplpy-style-guide.ipynb
- 
-  - file: genindex.md 
+    sections:
+      - file: notebooks/appendix/ampl-style-guide.ipynb
+      - file: notebooks/appendix/amplpy-style-guide.ipynb
+
+  - file: genindex.md
+
