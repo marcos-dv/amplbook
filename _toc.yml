@@ -3,9 +3,10 @@
 format: jb-book
 root: index.md
 chapters:
-    #  - file: notebooks/01/01.md
-  sections:
   - file: notebooks/01/tut_1_1.ipynb
+#  - file: notebooks/01/01.md
+  sections:
+    - file: notebooks/01/tut_1_1.ipynb
     #  - file: notebooks/01/tut_1_2.ipynb
     #  - file: notebooks/01/tut_1_3.ipynb
     #  - file: notebooks/01/tut_1_4.ipynb
