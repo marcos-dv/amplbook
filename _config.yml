@@ -51,7 +51,7 @@ html:
   use_repository_button: true
   use_multitoc_numbering: false
   home_page_in_navbar: true
-  baseurl: https://ampl.com/amplbook/
+  baseurl: https://github.com/marcos-dv/amplbook
 
 sphinx:
   extra_extensions:

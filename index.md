@@ -1,15 +1,5 @@
 # AMPL: a Mathematical Programming Language 🐍
 
-WIP
-
-## Getting started
-
-WIP
-
-## Citation
-
-If you wish to cite this work, please use
-
 ## Introduction
 
 As our title suggests, there are two aspects to the subject of this book. The first is
