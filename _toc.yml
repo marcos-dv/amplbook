@@ -35,6 +35,37 @@ chapters:
       - file: notebooks/04/4_3_a_model_of_production_and_transportation.ipynb
       - file: notebooks/04/4_exercises.ipynb
 
+  - file: notebooks/05/05.md
+    sections:
+      - file: notebooks/05/5_1_unordered_sets.ipynb
+      - file: notebooks/05/5_2_sets_of_numbers.ipynb
+      - file: notebooks/05/5_3_set_operations.ipynb
+      - file: notebooks/05/5_4_set_membership_operations_and_functions.ipynb
+      - file: notebooks/05/5_5_indexing_expressions.ipynb
+      - file: notebooks/05/5_6_ordered_sets.ipynb
+      - file: notebooks/05/5_exercises.ipynb
+
+  - file: notebooks/06/06.md
+    sections:
+      - file: notebooks/06/6_1_sets_of_ordered_pairs.ipynb
+      - file: notebooks/06/6_2_subsets_and_slices_of_ordered_pairs.ipynb
+      - file: notebooks/06/6_3_sets_of_longer_tuples.ipynb
+      - file: notebooks/06/6_4_operations_on_sets_of_tuples.ipynb
+      - file: notebooks/06/6_5_indexed_collections_of_sets.ipynb
+      - file: notebooks/06/6_exercises.ipynb
+
+  - file: notebooks/07/07.md
+    sections:
+      - file: notebooks/07/7_1_parameter_declarations.ipynb
+      - file: notebooks/07/7_2_arithmetic_expressions.ipynb
+      - file: notebooks/07/7_3_logical_and_conditional_expressions.ipynb
+      - file: notebooks/07/7_4_restrictions_on_parameters.ipynb
+      - file: notebooks/07/7_5_computed_parameters.ipynb
+      - file: notebooks/07/7_6_randomly_generated_parameters.ipynb
+      - file: notebooks/07/7_7_logical_parameters.ipynb
+      - file: notebooks/07/7_8_symbolic_parameters.ipynb
+      - file: notebooks/07/7_exercises.ipynb
+
   - file: notebooks/appendix/appendix.md
     sections:
       - file: notebooks/appendix/ampl-style-guide.ipynb
