@@ -66,6 +66,14 @@ chapters:
       - file: notebooks/07/7_8_symbolic_parameters.ipynb
       - file: notebooks/07/7_exercises.ipynb
 
+  - file: notebooks/08/08.md
+    sections:
+      - file: notebooks/08/8_1_variables.ipynb
+      - file: notebooks/08/8_2_linear_expressions.ipynb
+      - file: notebooks/08/8_3_objectives.ipynb
+      - file: notebooks/08/8_4_constraints.ipynb
+      - file: notebooks/08/8_exercises.ipynb
+
   - file: notebooks/appendix/appendix.md
     sections:
       - file: notebooks/appendix/ampl-style-guide.ipynb
