@@ -1,5 +1,5 @@
 #################
-MO-book additions to standard Python .gitignore
+AMPL Book additions to standard Python .gitignore
 .DS_Store
 .ipynb_checkpoints
 
@@ -8,6 +8,9 @@ MO-book additions to standard Python .gitignore
 
 # private directory to store reference materials that shouldn't be archived to github
 references/
+
+# Generated model files
+*.mod
 
 #################
 
