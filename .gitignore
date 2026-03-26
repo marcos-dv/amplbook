@@ -12,6 +12,9 @@ references/
 # Generated model files
 *.mod
 
+# Markdown drafts
+.mdbook/
+
 #################
 
 # Byte-compiled / optimized / DLL files
