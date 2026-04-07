@@ -11,7 +11,7 @@ title: "AMPL: A Modeling Language for Mathematical Programming"
 
 author: The AMPL Team
 copyright: "2025"
-logo: media/logo-03.png
+logo: media/ampl_book_logo.png
 exclude_patterns: [.DS_Store, "**.ipynb_checkpoints", "**.pytest_cache", "tools"]
 
 # Launch on Google Colab button
