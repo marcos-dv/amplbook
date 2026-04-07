@@ -74,10 +74,171 @@ chapters:
       - file: notebooks/08/8_4_constraints.ipynb
       - file: notebooks/08/8_exercises.ipynb
 
-  - file: notebooks/appendix/appendix.md
+  - file: notebooks/09/09.md
     sections:
-      - file: notebooks/appendix/ampl-style-guide.ipynb
-      - file: notebooks/appendix/amplpy-style-guide.ipynb
+      - file: notebooks/09/9_1_formatted_data_the_data_command.ipynb
+      - file: notebooks/09/9_2_data_in_lists.ipynb
+      - file: notebooks/09/9_3_data_in_tables.ipynb
+      - file: notebooks/09/9_4_other_features_of_data_statements.ipynb
+      - file: notebooks/09/9_5_reading_unformatted_data_the_read_command.ipynb
+      - file: notebooks/09/9_exercises.ipynb
+
+  - file: notebooks/10/10.md
+    sections:
+      - file: notebooks/10/10_1_general_principles_of_data_correspondence.ipynb
+      - file: notebooks/10/10_2_examples_of_tablehandling_statements.ipynb
+      - file: notebooks/10/10_3_reading_data_from_relational_tables.ipynb
+      - file: notebooks/10/10_4_writing_data_to_relational_tables.ipynb
+      - file: notebooks/10/10_5_reading_and_writing_the_same_table.ipynb
+      - file: notebooks/10/10_6_indexed_collections_of_tables_and_columns.ipynb
+      - file: notebooks/10/10_7_standard_and_builtin_table_handlers.ipynb
+
+  - file: notebooks/11/11.md
+    sections:
+      - file: notebooks/11/11_1_general_principles_of_commands_and_options.ipynb
+      - file: notebooks/11/11_2_setting_up_and_solving_models_and_data.ipynb
+      - file: notebooks/11/11_3_modifying_data.ipynb
+      - file: notebooks/11/11_4_modifying_models.ipynb
+
+  - file: notebooks/12/12.md
+    sections:
+      - file: notebooks/12/12_1_browsing_through_results_the_display_command.ipynb
+      - file: notebooks/12/12_2_formatting_options_for_display.ipynb
+      - file: notebooks/12/12_3_numeric_options_for_display.ipynb
+      - file: notebooks/12/12_4_other_output_commands_print_and_printf.ipynb
+      - file: notebooks/12/12_5_related_solution_values.ipynb
+      - file: notebooks/12/12_6_other_display_features_for_models_and_instances.ipynb
+      - file: notebooks/12/12_7_general_facilities_for_manipulating_output.ipynb
+
+  - file: notebooks/13/13.md
+    sections:
+      - file: notebooks/13/13_1_running_scripts_include_and_commands.ipynb
+      - file: notebooks/13/13_2_iterating_over_a_set_the_for_statement.ipynb
+      - file: notebooks/13/13_3_iterating_subject_to_a_condition_the_repeat_statement.ipynb
+      - file: notebooks/13/13_4_testing_a_condition_the_ifthenelse_statement.ipynb
+      - file: notebooks/13/13_5_terminating_a_loop_break_and_continue.ipynb
+      - file: notebooks/13/13_6_stepping_through_a_script.ipynb
+      - file: notebooks/13/13_7_manipulating_character_strings.ipynb
+
+  - file: notebooks/14/14.md
+    sections:
+      - file: notebooks/14/14_1_presolve.ipynb
+      - file: notebooks/14/14_2_retrieving_results_from_solvers.ipynb
+      - file: notebooks/14/14_3_exchanging_information_with_solvers_via_suffixes.ipynb
+      - file: notebooks/14/14_4_alternating_between_models.ipynb
+      - file: notebooks/14/14_5_named_problems.ipynb
+
+  - file: notebooks/15/15.md
+    sections:
+      - file: notebooks/15/15_1_minimumcost_transshipment_models.ipynb
+      - file: notebooks/15/15_2_other_network_models.ipynb
+      - file: notebooks/15/15_3_declaring_network_models_by_node_and_arc.ipynb
+      - file: notebooks/15/15_4_rules_for_node_and_arc_declarations.ipynb
+      - file: notebooks/15/15_5_solving_network_linear_programs.ipynb
+      - file: notebooks/15/15_exercises.ipynb
+
+  - file: notebooks/16/16.md
+    sections:
+      - file: notebooks/16/16_1_an_inputoutput_model.ipynb
+      - file: notebooks/16/16_2_a_scheduling_model.ipynb
+      - file: notebooks/16/16_3_rules_for_columnwise_formulations.ipynb
+      - file: notebooks/16/16_exercises.ipynb
+
+  - file: notebooks/17/17.md
+    sections:
+      - file: notebooks/17/17_1_cost_terms.ipynb
+      - file: notebooks/17/17_2_common_twopiece_and_threepiece_terms.ipynb
+      - file: notebooks/17/17_3_other_piecewiselinear_functions.ipynb
+      - file: notebooks/17/17_4_guidelines_for_piecewiselinear_optimization.ipynb
+      - file: notebooks/17/17_exercises.ipynb
+
+  - file: notebooks/18/18.md
+    sections:
+      - file: notebooks/18/18_1_sources_of_nonlinearity.ipynb
+      - file: notebooks/18/18_2_nonlinear_variables.ipynb
+      - file: notebooks/18/18_3_nonlinear_expressions.ipynb
+      - file: notebooks/18/18_4_pitfalls_of_nonlinear_programming.ipynb
+      - file: notebooks/18/18_exercises.ipynb
+
+  - file: notebooks/19/19.md
+    sections:
+      - file: notebooks/19/19_1_sources_of_complementarity.ipynb
+      - file: notebooks/19/19_2_forms_of_complementarity_constraints.ipynb
+      - file: notebooks/19/19_3_working_with_complementarity_constraints.ipynb
+      - file: notebooks/19/19_exercises.ipynb
+
+  - file: notebooks/20/20.md
+    sections:
+      - file: notebooks/20/20_1_integer_variables.ipynb
+      - file: notebooks/20/20_2_zero-one_variables_and_logical_conditions.ipynb
+      - file: notebooks/20/20_3_practical_considerations_in_integer_programming.ipynb
+      - file: notebooks/20/20_exercises.ipynb
+
+  - file: notebooks/appendix_a/appendix_a.md
+    sections:
+      - file: notebooks/appendix_a/a_1_lexical_rules.ipynb
+      - file: notebooks/appendix_a/a_2_set_members.ipynb
+      - file: notebooks/appendix_a/a_3_indexing_expressions_and_subscripts.ipynb
+      - file: notebooks/appendix_a/a_4_expressions.ipynb
+      - file: notebooks/appendix_a/a_4_1_builtin_functions.ipynb
+      - file: notebooks/appendix_a/a_4_2_strings_and_regular_expressions.ipynb
+      - file: notebooks/appendix_a/a_4_3_piecewiselinear_terms.ipynb
+      - file: notebooks/appendix_a/a_5_declarations_of_model_entities.ipynb
+      - file: notebooks/appendix_a/a_6_1_cardinality_and_arity_functions.ipynb
+      - file: notebooks/appendix_a/a_6_2_ordered_sets.ipynb
+      - file: notebooks/appendix_a/a_6_3_intervals_and_other_infinite_sets.ipynb
+      - file: notebooks/appendix_a/a_7_parameter_declarations.ipynb
+      - file: notebooks/appendix_a/a_7_1_check_statements.ipynb
+      - file: notebooks/appendix_a/a_7_2_infinity.ipynb
+      - file: notebooks/appendix_a/a_8_variable_declarations.ipynb
+      - file: notebooks/appendix_a/a_8_1_defined_variables.ipynb
+      - file: notebooks/appendix_a/a_9_constraint_declarations.ipynb
+      - file: notebooks/appendix_a/a_9_1_complementarity_constraints.ipynb
+      - file: notebooks/appendix_a/a_10_objective_declarations.ipynb
+      - file: notebooks/appendix_a/a_11_suffix_notation_for_auxiliary_values.ipynb
+      - file: notebooks/appendix_a/a_11_1_suffix_declarations.ipynb
+      - file: notebooks/appendix_a/a_11_2_statuses.ipynb
+      - file: notebooks/appendix_a/a_12_standard_data_format.ipynb
+      - file: notebooks/appendix_a/a_12_1_set_data.ipynb
+      - file: notebooks/appendix_a/a_12_2_parameter_data.ipynb
+      - file: notebooks/appendix_a/a_13_database_access_and_tables.ipynb
+      - file: notebooks/appendix_a/a_14_command_language_overview.ipynb
+      - file: notebooks/appendix_a/a_14_1_options_and_environment_variables.ipynb
+      - file: notebooks/appendix_a/a_15_redirection_of_input_and_output.ipynb
+      - file: notebooks/appendix_a/a_16_printing_and_display_commands.ipynb
+      - file: notebooks/appendix_a/a_17_reading_data.ipynb
+      - file: notebooks/appendix_a/a_18_modeling_commands.ipynb
+      - file: notebooks/appendix_a/a_18_1_the_solve_command.ipynb
+      - file: notebooks/appendix_a/a_18_2_the_solution_command.ipynb
+      - file: notebooks/appendix_a/a_18_3_the_write_command.ipynb
+      - file: notebooks/appendix_a/a_18_4_auxiliary_files.ipynb
+      - file: notebooks/appendix_a/a_18_5_changing_a_model_delete_purge_redeclare.ipynb
+      - file: notebooks/appendix_a/a_18_6_the_drop_restore_and_objective_commands.ipynb
+      - file: notebooks/appendix_a/a_18_7_the_fix_and_unfix_commands.ipynb
+      - file: notebooks/appendix_a/a_18_8_named_problems_and_environments.ipynb
+      - file: notebooks/appendix_a/a_18_9_modifying_data_reset_update_let.ipynb
+      - file: notebooks/appendix_a/a_19_examining_models.ipynb
+      - file: notebooks/appendix_a/a_19_1_the_show_command.ipynb
+      - file: notebooks/appendix_a/a_19_2_the_xref_command.ipynb
+      - file: notebooks/appendix_a/a_19_3_the_expand_command.ipynb
+      - file: notebooks/appendix_a/a_19_4_generic_names.ipynb
+      - file: notebooks/appendix_a/a_19_5_the_check_command.ipynb
+      - file: notebooks/appendix_a/a_20_scripts_and_control_flow_statements.ipynb
+      - file: notebooks/appendix_a/a_20_1_the_for_repeat_and_ifthenelse_statements.ipynb
+      - file: notebooks/appendix_a/a_20_2_stepping_through_commands.ipynb
+      - file: notebooks/appendix_a/a_21_computational_environment.ipynb
+      - file: notebooks/appendix_a/a_21_1_the_shell_command.ipynb
+      - file: notebooks/appendix_a/a_21_2_the_cd_command.ipynb
+      - file: notebooks/appendix_a/a_21_3_the_quit_exit_and_end_commands.ipynb
+      - file: notebooks/appendix_a/a_21_4_builtin_timing_parameters.ipynb
+      - file: notebooks/appendix_a/a_21_5_logging.ipynb
+      - file: notebooks/appendix_a/a_22_imported_functions.ipynb
+      - file: notebooks/appendix_a/a_23_ampl_invocation.ipynb
+
+  - file: notebooks/appendix_b/appendix_b.md
+    sections:
+      - file: notebooks/appendix_b/ampl-style-guide.ipynb
+      - file: notebooks/appendix_b/amplpy-style-guide.ipynb
 
   - file: genindex.md
 
