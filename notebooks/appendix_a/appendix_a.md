@@ -1,4 +1,4 @@
-## Appendix A. AMPL Reference Manual
+# Appendix A. AMPL Reference Manual
 
 AMPL is a language for algebraic modeling and mathematical programming: a computerreadable
 language for expressing optimization problems such as linear programming in algebraic
