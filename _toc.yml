@@ -76,12 +76,13 @@ chapters:
 
   - file: notebooks/09/09.md
     sections:
-      - file: notebooks/09/9_1_formatted_data_the_data_command.ipynb
-      - file: notebooks/09/9_2_data_in_lists.ipynb
-      - file: notebooks/09/9_3_data_in_tables.ipynb
-      - file: notebooks/09/9_4_other_features_of_data_statements.ipynb
-      - file: notebooks/09/9_5_reading_unformatted_data_the_read_command.ipynb
-      - file: notebooks/09/9_exercises.ipynb
+      - file: notebooks/09/9_1_simple_data.ipynb
+      - file: notebooks/09/9_2_data_in_dicts.ipynb
+      - file: notebooks/09/9_3_data_composite.ipynb
+      - file: notebooks/09/9_4_data_in_pandas.ipynb
+      - file: notebooks/09/9_5_data_in_numpy.ipynb
+      - file: notebooks/09/9_6_data_in_polars.ipynb
+      - file: notebooks/09/9_7_data_in_external.ipynb
 
   - file: notebooks/10/10.md
     sections:
