@@ -86,13 +86,14 @@ chapters:
 
   - file: notebooks/10/10.md
     sections:
-      - file: notebooks/10/10_1_general_principles_of_data_correspondence.ipynb
-      - file: notebooks/10/10_2_examples_of_tablehandling_statements.ipynb
-      - file: notebooks/10/10_3_reading_data_from_relational_tables.ipynb
-      - file: notebooks/10/10_4_writing_data_to_relational_tables.ipynb
-      - file: notebooks/10/10_5_reading_and_writing_the_same_table.ipynb
-      - file: notebooks/10/10_6_indexed_collections_of_tables_and_columns.ipynb
-      - file: notebooks/10/10_7_standard_and_builtin_table_handlers.ipynb
+      - file: notebooks/10/10_1_general_principles_of_commands_and_options.ipynb
+      - file: notebooks/10/10_2_setting_up_and_solving_models_and_data.ipynb
+      - file: notebooks/10/10_3_modifying_data.ipynb
+      - file: notebooks/10/10_4_modifying_models.ipynb
+      - file: notebooks/10/10_5_running_scripts.ipynb
+      - file: notebooks/10/10_6_iterating_over_a_set_the_for_statement.ipynb
+      - file: notebooks/10/10_7_conditions_and_loop_control.ipynb
+      - file: notebooks/10/10_8_manipulating_character_strings.ipynb
 
   - file: notebooks/11/11.md
     sections:
