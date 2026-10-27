@@ -1,18 +1,26 @@
-# AMPL: a Mathematical Programming Language 🐍
+# AMPL: A Mathematical Programming Language - Python version 🐍
 
 ## Introduction
 
 As our title suggests, there are two aspects to the subject of this book. The first is
 mathematical programming, the optimization of a function of many variables subject to
-constraints. The second is the AMPL modeling language, which we designed and implemented
+constraints. The second is the AMPL modeling language, which was designed and implemented
 to help people use computers to develop and apply mathematical programming
 models.
 
 We intend this book as an introduction both to mathematical programming and to
 AMPL. For readers already familiar with mathematical programming, it can serve as a
-user's guide and reference manual for the AMPL software. We assume no previous
+user's guide for the AMPL software. We assume no previous
 knowledge of the subject, however, and hope that this book will also encourage the use of
 mathematical programming models by those who are new to the field.
+
+This is the Python edition of the book by Robert Fourer, David M. Gay and Brian W. Kernighan.
+The AMPL models are those of the original book, but everything around them is now done
+from Python, through **amplpy**, the Python interface to AMPL: models are read and solved,
+data are supplied from Python data structures such as lists, dictionaries and Pandas DataFrames,
+and results are retrieved into Python for analysis. Every section is a Jupyter notebook that
+installs what it needs in its first cell, so that it can be run in Google Colab or in any other
+Jupyter environment.
 
 ## Mathematical programming
 
@@ -58,18 +66,11 @@ meaning for the term "programming."
 In spite of the broad applicability of linear programming, the linearity assumption is
 sometimes too unrealistic. If instead some smooth nonlinear functions of the variables
 are used in the objective or constraints, the problem is called a nonlinear program. Solving
-such a problem is harder, though in practice not impossibly so. Although the optimal
-values of nonlinear functions have been a subject of study for over two centuries, computational
-methods for solving nonlinear programs in many variables were developed only
-in recent decades, after the success of methods for linear programming. The field of
-mathematical programming is thus also known as large scale optimization, to distinguish
-it from the classical topics of optimization in mathematical analysis.
-
-The assumptions of linear programming also break down if some variables must take
-on whole number, or integral, values. Then the problem is called integer programming,
-and in general becomes much harder. Nevertheless, a combination of faster computers
-and more sophisticated methods have made large integer programs increasingly tractable
-in recent years.
+such a problem is harder, though in practice not impossibly so. The assumptions of linear
+programming also break down if some variables must take on whole number, or integral,
+values. Then the problem is called integer programming, and in general becomes much harder.
+Nevertheless, a combination of faster computers and more sophisticated methods have made
+large nonlinear and integer programs increasingly tractable.
 
 ## The AMPL modeling language
 
@@ -130,28 +131,19 @@ This book describes AMPL, an algebraic modeling language for mathematical progra
 it was designed and implemented by the authors around 1985, and has been
 evolving ever since. AMPL is notable for the similarity of its arithmetic expressions to
 customary algebraic notation, and for the generality and power of its set and subscripting
-expressions. AMPL also extends algebraic notation to express common mathematical
-programming structures such as network flow constraints and piecewise linearities.
+expressions.
 
-AMPL offers an interactive command environment for setting up and solving mathematical
-programming problems. A flexible interface enables several solvers to be available
-at once so a user can switch among solvers and select options that may improve
-solver performance. Once optimal solutions have been found, they are automatically
-translated back to the modeler's form so that people can view and analyze them. All of
-the general set and arithmetic expressions of the AMPL modeling language can also be
-used for displaying data and results; a variety of options are available to format data for
-browsing, printing reports, or preparing input to other programs.
+AMPL keeps the model separate from the data and from the program that uses it. This turned
+to be a relevant feature when using Generative AI to develop applications, since models
+are easier to verify, understand, and explain. AMPL syntax has served as a reference
+to new modeling tools due to the similarity to natural language.
 
-Through its emphasis on AMPL, this book differs considerably from the presentation
-of modeling in standard mathematical programming texts. The approach taken by a typical
-textbook is still strongly influenced by the circumstances of 30 years ago, when a student
-might be lucky to have the opportunity to solve a few small linear programs on any
-actual computer. As encountered in such textbooks, mathematical programming often
-appears to require only the conversion of a "word problem" into a small system of
-inequalities and an objective function, which are then presented to a simple optimization
-package that prints a short listing of answers. While this can be a good approach for
-introductory purposes, it is not workable for dealing with the hundreds or thousands of
-variables and constraints that are found in most real-world mathematical programs.
+In this edition, the program is written in Python: amplpy reads an AMPL model, passes it data
+from Python, invokes a solver, and returns the results to Python, where they can be analyzed
+with the usual tools of the Python ecosystem. A flexible interface enables several solvers
+to be available at once, so a user can switch among solvers and select options that may
+improve solver performance. Once optimal solutions have been found, they are automatically
+translated back to the modeler's form so that people can view and analyze them.
 
 The availability of an algebraic modeling language makes it possible to emphasize the
 kinds of general models that can be used to describe large-scale optimization problems.
@@ -169,22 +161,24 @@ textbooks, not a replacement. On the other hand, for those whose immediate conce
 to apply mathematical programming to a particular problem, the book can provide a useful
 introduction on its own.
 
-In addition, AMPL software is readily available for experiment: the AMPL web site,
-Swww.ampl.com, provides free downloadable "student" versions of AMPL and representative
-solvers that run on Windows, Unix/Linux, and Mac OS X. These can easily
-handle problems of a few hundred variables and constraints, including all of the examples
-in the book. Versions that support much larger problems and additional solvers are also
-available from a variety of vendors; again, details may be found on the web site.
+AMPL software is readily available for experiment. The notebooks of this book install
+amplpy and the open-source solvers they use, such as HiGHS, with no further setup, and the
+[free AMPL Academic licenses](https://ampl.com/academia/) can be used to run them on your own computer
+also using some commercial solvers such as Gurobi, CPLEX, or Xpress.
+More information is available at [ampl.com](https://ampl.com/) and, for amplpy, in its
+[documentation](https://amplpy.ampl.com/).
 
 ## Outline of the book
 
-The second edition, like the first, is organized conceptually into four parts.
-Chapters 1 through 4 are a tutorial introduction to models for linear programming:
+The current version contains the first part of the book with Chapters from 1 to 10.
 
-1.   Production Models: Maximizing Profits
-2.   Diet and Other Input Models: Minimizing Costs
-3.   Transportation and Assignment Models
-4.   Building Larger Models
+The book is organized conceptually into parts. Chapters 1 through 4 are a tutorial
+introduction to models for linear programming:
+
+1. [Production Models: Maximizing Profits](notebooks/01/01.md)
+2. [Diet and Other Input Models: Minimizing Costs](notebooks/02/02.md)
+3. [Transportation and Assignment Models](notebooks/03/03.md)
+4. [Building Larger Models](notebooks/04/04.md)
 
 These chapters are intended to get you started using AMPL as quickly as possible. They
 include a brief review of linear programming and a discussion of a handful of simple
@@ -196,84 +190,48 @@ The next four chapters describe the fundamental components of an AMPL linear pro
 model in detail, using more complex examples to examine major aspects of the
 language systematically:
 
-5.   Simple Sets and Indexing
-6.   Compound Sets and Indexing
-7.   Parameters and Expressions
-8.   Linear Programs: Variables, Objectives and Constraints
+5. [Simple Sets and Indexing](notebooks/05/05.md)
+6. [Compound Sets and Indexing](notebooks/06/06.md)
+7. [Parameters and Expressions](notebooks/07/07.md)
+8. [Linear Programs: Variables, Objectives and Constraints](notebooks/08/08.md)
 
 We have tried to cover the most important features, so that these chapters can serve as a
 general user's guide. Each feature is introduced by one or more examples, building on
 previous examples wherever possible.
 
-The following six chapters describe how to use AMPL in more sophisticated ways:
+The following two chapters describe how to use AMPL from Python in more sophisticated ways:
 
-9.   Specifying Data
-10.   Database Access
-11.   Modeling Commands
-12.   Display Commands
-13.   Command Scripts
-14.   Interactions with Solvers
+9. [Specifying Data](notebooks/09/09.md)
+10. [Modeling Scripts](notebooks/10/10.md)
 
-The first two of these chapters explain how to provide the data values that define a specific
-instance of a model; Chapter 9 describes AMPL's text file data format, while Chapter 10
-presents features for access to information in relational database systems. Chapter 11
-explains the commands that read models and data, and invoke solvers; Chapter 12 shows
-how to display and save results. AMPL provides facilities for creating scripts of commands,
-and for writing loops and conditional statements; these are covered in Chapter 13.
-Chapter 14 goes into more detail on how to interact with solvers so as to make the best
-use of their capabilities and the information they provide.
+Chapter 9 explains how to provide the data values that define a specific instance of a model,
+from Python lists and dictionaries, from Pandas, NumPy and Polars data frames, and from
+external files such as CSV, JSON and Excel. Chapter 10 explains how to set up and solve
+models, how to change their data and their structure between solves, and how to write
+scripts, with Python loops and conditional statements, that solve a series of related
+problems automatically.
 
-Finally, we turn to the rich variety of problems and applications beyond purely linear
-models. The remaining chapters deal with six important special cases and generalizations:
-
-15.   Network Linear Programs
-16.   Columnwise Formulations
-17.   Piecewise-Linear Programs
-18.   Nonlinear Programs
-19.   Complementarity Problems
-20.   Integer Linear Programs
-
-Chapters 15 and 16 describe additional language features that help AMPL represent particular
-kinds of linear programs more naturally, and that may help to speed translation
-and solution. The last four chapters cover generalizations that can help models to be
-more realistic than linear programs, although they can also make the resulting optimization
-problems harder to solve.
-
-Appendix A is the AMPL reference manual; it describes all language features, including
-some not mentioned elsewhere in the text. Bibliography and exercises may be found
+Further chapters will be added in later releases. Exercises may be found
 in most of the chapters.
 
-## About the second edition
+## About this edition
 
-AMPL has evolved a lot in ten years, but its core remains essentially unchanged, and
-almost all of the models from the first edition work with the current program. Although
-we have made substantial revisions throughout the text, much of the brand new material
-is concentrated in the third part, where the original single chapter on the command environment
-has been expanded into five chapters. In particular, database access, scripts and
-programming constructs represent completely new material, and many additional AMPL
-commands for examining models and accessing solver information have been added.
+AMPL has evolved a lot since the book was first published, but its core remains essentially
+unchanged, and almost all of the models from the original book work with the current program.
+What has changed most is the way AMPL is used. The original book described an interactive
+command environment, with its own data format and its own language for scripts. This edition
+uses Python for all of these purposes: data are supplied from Python data structures, and scripts
+are Python programs that call amplpy. AMPL's own command language is mentioned only occasionally,
+as a curiosity for readers who have used AMPL that way.
 
-The first edition was written in 1992, just before the explosion in Internet and web
-use, and while personal computers were still rather limited in their capabilities; the first
-student versions of AMPL ran on DOS on tiny, slow machines, and were distributed on
-floppy disks.
+Since the second edition, problems have become more complex and solvers have improved as well. This version also
+contains the newest developments at AMPL to keep it up to date for a world where efficiency,
+flexibility and interpretability are mandatory.
 
-Today, the web site at www.ampl.com is the central source for all AMPL information
-and software. Pages at this site cover all that you need to learn about and experiment
-with optimization and the use of AMPL:
+All of the examples are complete, runnable notebooks, which can be opened in Google Colab from
+the button at the top of each page.
 
-- Free versions of AMPL for a variety of operating systems.
-- Free versions of several solvers for a variety of problem types.
-- All of the model and data files used as examples in this book.
-
-The free software is fully functional, save that it can only handle problems of a few hundred
-variables and constraints. Unrestricted commercial versions of AMPL and solvers
-are available as well; see the web site for a list of vendors.
-
-You can also try AMPL without downloading any software, through browser interfaces
-at www.ampl.com/TRYAMPL and the NEOS Server (neos.mcs.anl.gov).
-The AMPL web site also provides information on graphical user interfaces and new AMPL
-language features, which are under continuing development.
+Contributors to this new edition: Marcos Dominguez Velad, Jürgen Lentz, Nicolau Santos.
 
 ## Acknowledgements to the first edition
 
@@ -298,7 +256,7 @@ System in a Strategic Planning Environment." Mathematical Programming Study 20 (
 pp. 1-29. An introduction to GAMS, one of the first and most widely used algebraic modeling languages.
 
 Robert E. Bixby, "Solving Real-World Linear Programs: A Decade and More of Progress." Operations
-Reearch 50 (2002) pp. 3)-15. A history of recent advances in solvers for linear programming.
+Research 50 (2002) pp. 3-15. A history of recent advances in solvers for linear programming.
 Also in this issue are accounts of the early days of mathematical programming by pioneers
 of the field.
 
@@ -310,6 +268,6 @@ key ideas as objective functions and the simplex algorithm.
 
 Robert Fourer, "Modeling Languages versus Matrix Generators for Linear Programming." ACM
 Transactions on Mathematical Software 9 (1983) pp. 143-183. The case for modeling languages.
+
 C. A. C. Kuip, "Algebraic Languages for Mathematical Programming." European Journal of
 Operational Research 67 (1993) 25-51. A survey.
-
